@@ -1,125 +1,129 @@
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            min-width: 300px;
-            background-color: rgb(235, 232, 232);
-        }
-        
-        p {
-            font-size: 14px;
-            color: rgb(58, 56, 56);
-        }
-        
-        h5,
-        h6 {
-            font-size: 14px;
-            font-weight: bold;
-            color: rgb(58, 56, 56);
-        }
-        
-        .media img {
-            width: 168px;
-            height: 94px;
-        }
-        /* select */
-        
-        #videoList li:hover {
-            border-right: 1px solid rgb(146, 146, 146);
-            cursor: pointer;
-        }
-        
-        #videoList li {
-            border-right: 6px solid rgb(141, 141, 141);
-            cursor: pointer;
-            margin-right: 0%;
-        }
-        
-        #videoList :hover {
-            cursor: pointer;
-            background-color: rgb(255, 255, 255);
-            margin-right: 0%;
-        }
-        
-        .sitelogo {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 5px;
-            background-color: #e2d0d0;
-        }
-        
-        .metube-logo {
-            height: 40px;
-            margin-left: 10px;
-        }
-        
-        .btn-danger {
-            color: #fff;
-            background-color: #b0bbbf99;
-            border-color: #495057;
-        }
-        
-        .btn-danger:hover {
-            color: #fff;
-            background-color: #00000099;
-            border-color: #495057;
-        }
-        
-        .categories {
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin-left: 20px;
-        }
-        
-        .category-section {
-            display: flex;
-            overflow: hidden;
-            font-size: 15px;
-            position: flex;
-        }
-        
-        .category {
-            margin-right: 1rem;
-            word-wrap: none;
-            white-space: nowrap;
-            border: 2px solid rgb(61, 61, 61);
-            border-radius: 900px;
-            background-color: #c5bbbb;
-            padding: .5rem 1rem;
-            font-size: inherit;
-            cursor: pointer;
-            transition: background-color 150ms;
-            color: rgb(69, 70, 70)
-        }
-        
-        .category:hover {
-            background-color: rgb(241, 133, 133);
-            color: #EEE
-        }
-        
-        .category.active {
-            background-color: #606060;
-            color: white;
-            border-color: #EEE;
-        }
-        
-        .category:last-child {
-            margin-right: 0;
-        }
-        
-        .menu-icons {
-            display: grid;
-            grid-template-columns: repeat(4, auto);
-            align-items: center;
-            gap: 1rem;
-            margin-right: .5rem;
-        }
-        
-        .menu-channel-icon {
-            border-radius: 50%;
-            width: 36px;
-            height: 36px;
-            background-color: #AAA;
-            position: flex;
-        }
+                html,
+                body {
+                    width: 100%;
+                    height: 100%;
+                    min-width: 300px;
+                    background-color: rgb(235, 232, 232);
+                }
+                
+                p {
+                    font-size: 10px;
+                    color: rgb(58, 56, 56);
+                }
+                
+                h5,
+                h6 {
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: rgb(58, 56, 56);
+                }
+                
+                #player {
+                    border-radius: 5px;
+                }
+                
+                .media img {
+                    width: 168px;
+                    height: 94px;
+                }
+                /* select */
+                
+                #videoList li:hover {
+                    border-right: 10px solid rgb(44, 44, 44);
+                    cursor: pointer;
+                }
+                
+                #videoList li {
+                    border-right: 3px solid rgb(141, 141, 141);
+                    cursor: pointer;
+                    margin-right: 0%;
+                }
+                
+                #videoList :hover {
+                    cursor: pointer;
+                    background-color: rgb(255, 255, 255);
+                    margin-right: 0%;
+                }
+                
+                .sitelogo {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 5px;
+                    background-color: #e2d0d0;
+                }
+                
+                .metube-logo {
+                    height: 40px;
+                    margin-left: 10px;
+                }
+                
+                .btn-danger {
+                    color: #fff;
+                    background-color: #b0bbbf99;
+                    border-color: #495057;
+                }
+                
+                .btn-danger:hover {
+                    color: #fff;
+                    background-color: #00000099;
+                    border-color: #495057;
+                }
+                
+                .categories {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    margin-left: 20px;
+                }
+                
+                .category-section {
+                    display: flex;
+                    overflow: hidden;
+                    font-size: 15px;
+                    position: flex;
+                }
+                
+                .category {
+                    margin-right: 1rem;
+                    word-wrap: none;
+                    white-space: nowrap;
+                    border: 2px solid rgb(61, 61, 61);
+                    border-radius: 900px;
+                    background-color: #c5bbbb;
+                    padding: .5rem 1rem;
+                    font-size: inherit;
+                    cursor: pointer;
+                    transition: background-color 150ms;
+                    color: rgb(69, 70, 70)
+                }
+                
+                .category:hover {
+                    background-color: rgb(241, 133, 133);
+                    color: #EEE
+                }
+                
+                .category.active {
+                    background-color: #606060;
+                    color: white;
+                    border-color: #EEE;
+                }
+                
+                .category:last-child {
+                    margin-right: 0;
+                }
+                
+                .menu-icons {
+                    display: grid;
+                    grid-template-columns: repeat(4, auto);
+                    align-items: center;
+                    gap: 1rem;
+                    margin-right: .5rem;
+                }
+                
+                .menu-channel-icon {
+                    border-radius: 50%;
+                    width: 36px;
+                    height: 36px;
+                    background-color: #AAA;
+                    position: flex;
+                }
