@@ -51,11 +51,18 @@
                     align-items: center;
                     padding: 5px;
                     background-color: #e2d0d0;
+                    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.02);
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    z-index: 1;
                 }
                 
                 .metube-logo {
                     height: 40px;
                     margin-left: 10px;
+                    border-radius: 5px;
                 }
                 
                 .btn-danger {
@@ -71,7 +78,7 @@
                 }
                 
                 .categories {
-                    margin-top: 10px;
+                    margin-top: 80px;
                     margin-bottom: 10px;
                     margin-left: 20px;
                 }
@@ -94,7 +101,7 @@
                     font-size: inherit;
                     cursor: pointer;
                     transition: background-color 150ms;
-                    color: rgb(69, 70, 70)
+                    color: rgb(69, 70, 70);
                 }
                 
                 .category:hover {
@@ -126,4 +133,104 @@
                     height: 36px;
                     background-color: #AAA;
                     position: flex;
+                }
+                
+                .row {
+                    margin-top: 1rem;
+                    display: flex;
+                }
+                
+                @media(max-width:1080px) {
+                    .metube-logo {
+                        height: 30px;
+                        transition: all ease 0.35s;
+                        margin-top: 4.4px;
+                    }
+                    .menu-icons {
+                        display: grid;
+                        grid-template-columns: repeat(4, auto);
+                        align-items: center;
+                        gap: .8rem;
+                        margin-right: .5rem;
+                    }
+                    .menu-channel-icon,
+                    .app-icon,
+                    .notif-icon,
+                    .upload-icon {
+                        height: 20px;
+                        width: 20px;
+                        transition: all ease 0.35s;
+                    }
+                    .form-control {
+                        transition: all ease 0.35s;
+                        height: 2rem;
+                        margin-top: 4.4px;
+                    }
+                    .btn-danger {
+                        height: 2rem;
+                        width: 40px;
+                        margin-top: 4.4px;
+                        transition: all ease 0.35s;
+                    }
+                    .categories {
+                        margin-top: 70px;
+                        margin-bottom: 10px;
+                        margin-left: 20px;
+                    }
+                    .category-section {
+                        display: flex;
+                        overflow: hidden;
+                        font-size: 12px;
+                        position: flex;
+                    }
+                }
+                
+                @media(max-width:900px) {
+                    .metube-logo {
+                        height: 25px;
+                        transition: all ease 0.2s;
+                        margin-top: 3.7px;
+                        border-radius: 5px;
+                    }
+                    .menu-icons {
+                        display: grid;
+                        grid-template-columns: repeat(4, auto);
+                        align-items: center;
+                        gap: .6rem;
+                        margin-right: .5rem;
+                    }
+                    .menu-channel-icon,
+                    .app-icon,
+                    .notif-icon,
+                    .upload {
+                        height: 18px;
+                        width: 18px;
+                        transition: all ease 0.35s;
+                    }
+                    .form-control {
+                        transition: all ease 0.35s;
+                        height: 1.75rem;
+                        margin-top: 3.7px;
+                    }
+                    .btn-danger {
+                        height: 1.75rem;
+                        width: 35px;
+                        margin-top: 4px;
+                        transition: all ease 0.35s;
+                    }
+                    .search-icon {
+                        height: .95rem;
+                        margin-bottom: 10rem;
+                    }
+                    .categories {
+                        margin-top: 70px;
+                        margin-bottom: 10px;
+                        margin-left: 20px;
+                    }
+                    .category-section {
+                        display: flex;
+                        overflow: hidden;
+                        font-size: 10px;
+                        position: flex;
+                    }
                 }
